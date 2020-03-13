@@ -8,7 +8,7 @@
     <title>Design & Development</title>
   </head>
   <body>
-    <div id="disclaimer">This site is currently just a loose setup.</div>
+    <div id="disclaimer"></div>
     <main>
       Hi! I’m Marius Kroh, a freelance designer & front end developer from
       Berlin, Germany. I enjoy making stuff work and learning about new concepts
@@ -26,5 +26,14 @@
         </li>
       </ul>
     </div>
+    <script>
+      function getTimestamp() {
+        const disclaimer = document.querySelector("#disclaimer");
+        const currentDate = new Date();
+        const date = currentDate.getTime();
+        disclaimer.innerHTML = date;
+      }
+      setInterval(getTimestamp, 1000);
+    </script>
   </body>
 </html>
