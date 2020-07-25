@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Design & Development</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="disclaimer"></div>
     <main>
-      Hi! I’m Marius Kroh, designer & front end developer from Berlin, Germany.
-      I enjoy making stuff work and learning about new concepts – I just started
-      with React! Behind the scenes I'm working on my portfolio which will be
-      shown here hopefully soon. My goal for 2020 is a full-time position in the
-      field of front end/UI/web development.
+        Hi! I’m Marius Kroh, designer & front end developer from Berlin, Germany.
+        I enjoy making stuff work and learning about new concepts.
+        Behind the scenes I'm working on my portfolio which will be
+        shown here hopefully soon. My goal for 2020 is a full-time position in the
+        field of front end/UI/web development.
     </main>
     <div id="social">
-      <ul>
-        <li><a href="https://github.com/mariuskroh">GitHub</a></li>
-        <li><a href="https://www.instagram.com/mariuskroh">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/mariuskroh/">LinkedIn</a></li>
-      </ul>
+        <ul>
+            <li><a href="https://github.com/mariuskroh">GitHub</a></li>
+            <li><a href="https://www.instagram.com/mariuskroh">Instagram</a></li>
+        </ul>
     </div>
     <script>
-      function getTimestamp() {
+    function getTimestamp() {
         const disclaimer = document.querySelector("#disclaimer");
         const currentDate = new Date();
         const date = currentDate.getTime();
         disclaimer.innerHTML = date;
-      }
-      getTimestamp();
+    }
+    getTimestamp();
     </script>
-  </body>
+</body>
+
 </html>
